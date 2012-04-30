@@ -1,15 +1,15 @@
 /*
-	jQuery.extend extracted from the jQuery source
+  jQuery.extend extracted from the jQuery source
   Here's a demo: http://jsfiddle.net/8EkqF/
-	Credits: @FGRibreau, @addyosmani
+  Credits: @FGRibreau, @addyosmani
 
-	Usage: 
-		// Extend
-		var obj = extend({opt1:true, opt2:true}, {opt1:false});
+  Usage: 
+  // Extend
+  var obj = extend({opt1:true, opt2:true}, {opt1:false});
 
-		// Deep Copy
-		var clonedObject = extend(true, {}, myObject);
-		var clonedArray = extend(true, [], ['a',['b','c',['d']]]);
+  // Deep Copy
+  var clonedObject = extend(true, {}, myObject);
+  var clonedArray = extend(true, [], ['a',['b','c',['d']]]);
 */
 
 var toString = Object.prototype.toString,
