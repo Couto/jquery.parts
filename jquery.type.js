@@ -16,8 +16,10 @@ Credit: @sindresorhus
 
 
 Usage:
-isFunction( ['a','b'] );	// false
-isArray( ['a','b'] );		// true
+console.log( isFunction( function(){} ) ); // true
+console.log( isFunction( ['a','b'] ) ); // false
+console.log( isArray( ['a','b'] ) ); // true
+
 
 Demo: http://jsfiddle.net/mofle/AzdKq/
 
@@ -35,6 +37,7 @@ http://api.jquery.com/category/utilities/
 		classTypes = "Boolean Number String Function Array Date RegExp Object".split(" "),
 		l = classTypes.length,
 		classTypeName,
+		toString = Object.prototype.toString,
 		hasOwn = Object.prototype.hasOwnProperty;
 
 	// See test/unit/core.js for details concerning isFunction.
