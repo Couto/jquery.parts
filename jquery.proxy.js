@@ -1,7 +1,7 @@
 /*
   jQuery.proxy extracted from the jQuery source
   Here's a demo: http://jsfiddle.net/BuZ7J/
-  Credits:  @coutoantisocial
+  Credits: @ @coutoantisocial
 
   Usage:
   // Extend
@@ -12,13 +12,13 @@
   obj() // returns document
 */
 
-(function ( w ) {
+(function ( window ) {
     // Shortcuts
     var arrProto = Array.prototype,
         slice = arrProto.slice,
         toString = arrProto.toString;
 
-    function proxy( fn, context ) {
+    window.proxy = function( fn, context ) {
         if ( typeof context === "string" ) {
             var tmp = fn[context];
             context = fn;
@@ -39,8 +39,5 @@
 
         return proxy;
     }
-
-    // Expose proxy function
-    w.proxy = proxy;
 
 }( window ));
