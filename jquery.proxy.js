@@ -1,7 +1,7 @@
 /*
   jQuery.proxy extracted from the jQuery source
   Here's a demo: http://jsfiddle.net/BuZ7J/
-  Credits: @ @coutoantisocial
+  Credits: @coutoantisocial
 
   Usage:
   // Extend
